@@ -8,10 +8,10 @@ on:
 
 env:
   ACCOUNT_ID: 890742591806
-  APP_NAME: demoapp 
-  CLUSTER_NAME: tempzopdev
+  APP_NAME: demonslayer 
+  CLUSTER_NAME: demonslayer
   ECR_REGISTRY: zop-dev
-  NAMESPACE: demo   
+  NAMESPACE: demon   
   REGION: us-east-2
 
 jobs:
@@ -29,8 +29,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18.x"
-
-      
       
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
